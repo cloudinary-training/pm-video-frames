@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Video Frames</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Video is Made up of Frames</h1>
+    <p>
+      Pull a set of <strong>9 frames</strong> out of a video using Cloudinary
+      transformations.
+    </p>
+    <p>Click on a Cloudinary training public ID or submit your own.</p>
+    <hr />
+    <p><strong>Choose a video from Cloudinary Training:</strong></p>
+    <input type="radio" id="surfing" name="video" value="surfing" />
+    <label for="surfing">surfing</label>
+
+    <input type="radio" id="snowboarding" name="video" value="snowboarding" />
+    <label for="snowboarding">snowboarding</label>
+
+    <input type="radio" id="climbing" name="video" value="climbing" />
+    <label for="climbing">climbing</label><br /><br />
+    <br />
+    <hr />
+    <h3>OR</h3>
+    <hr />
+    <p>
+      <strong>Enter your own cloud name, video public Id, and duration:</strong>
+    </p>
+    <form method="POST">
+      <input
+        type="text"
+        id="cloudname"
+        name="cloudname"
+        value=""
+        placeholder="Enter cloud name"
+      />
+      <input
+        type="text"
+        id="video-publicid"
+        name="video-publicid"
+        value=""
+        placeholder="Enter video public id"
+      />
+      <input
+        type="text"
+        id="video-duration"
+        name="video-duration"
+        value=""
+        placeholder="Enter duration"
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+
+    <video id="selected-video" width="640" height="360" controls="controls">
+      <source src="" />
+    </video>
+
+    <div class="container">
+      <img class="frame img-0" src="" />
+      <img class="frame img-1" src="" />
+      <img class="frame img-2" src="" />
+      <img class="frame img-3" src="" />
+      <img class="frame img-4" src="" />
+      <img class="frame img-5" src="" />
+      <img class="frame img-6" src="" />
+      <img class="frame img-7" src="" />
+      <img class="frame img-8" src="" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

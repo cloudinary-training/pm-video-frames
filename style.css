@@ -1,0 +1,29 @@
+.frame {
+  display: block;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input[type="text"] {
+  margin: 5px;
+}
+
+#selected-video {
+  display: none;
+  margin: 1rem 0rem 2rem 0rem;
+}
